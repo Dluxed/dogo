@@ -1,5 +1,6 @@
 import React from "react";
-import "/page.css";
+import "./page.css";
+import "./script";
 export default function Traductor(){
   return (
 

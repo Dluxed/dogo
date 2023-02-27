@@ -1,5 +1,7 @@
 import lenguages from "./lenguages"
 
+export default function codigo(){
+
 const selectFirst = document.querySelector(".first")
 const selectSecond = document.querySelector(".second")
 const translate = document.querySelector(".translate")
@@ -60,3 +62,4 @@ recognition.onresult = (event)=>{
 listen.addEventListener("click",_=>{
     recognition.start()
 })
+}
