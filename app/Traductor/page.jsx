@@ -1,12 +1,12 @@
 import React from "react";
 import "./page.css";
-//import Codigito from "./script";
+import Codigito from "./script";
 
 
 export default function Traductor(){
   return (
 <body>
-    <div class="conatiner">
+    <div class="container">
         <div>
             <div class="header">
                 <select class="first">
@@ -21,10 +21,10 @@ export default function Traductor(){
                     <textarea class="toText" placeholder="Enter text"></textarea>
                 </div>
             </div>
-            <button class="translate">Translate</button>
+            <button class="translate" onClick={Codigito}>Translate</button>
         </div>
     </div>
-    <script src="./script.js" type="module"></script>
+    <script src={Codigito} type="module"></script>
 </body>
    );
 }
