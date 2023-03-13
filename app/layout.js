@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+//Links de la navbar
 const NavbarLay =[
   {
   label: 'Home',
@@ -24,6 +25,16 @@ const NavbarLay =[
   {
     label: 'Curso Frances',
     route: '/CursoFrances'
+  },
+
+  {
+    label: 'Login',
+    route: '/login/'
+  },
+
+  {
+    label: 'Logout',
+    route: '/logout/'
   }
 ]
 
@@ -31,6 +42,7 @@ export default function RootLayout({children}) {
   return(
     <html>
       <head>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.main"></link>
         <title>Dogo Traductor</title>
       </head>
       

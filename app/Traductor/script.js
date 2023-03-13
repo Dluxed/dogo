@@ -1,9 +1,6 @@
 import lenguages from "./lenguages"
 
-
-
-
-
+//Componentes a usar
 function Codigito(){
     const selectFirst = document.querySelector(".first");
     const selectSecond = document.querySelector(".second");

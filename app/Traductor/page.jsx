@@ -1,7 +1,7 @@
 import React from "react";
 import "./page.css";
-import Codigito from "./script";
 
+//No sirve xd
 
 export default function Traductor(){
   return (
@@ -15,16 +15,13 @@ export default function Traductor(){
             </div>
             <div class="containerTextArea">
                 <div>
-                    <textarea class="fromText" placeholder="Enter text"></textarea>  
-                </div>
-                <div>
-                    <textarea class="toText" placeholder="Enter text"></textarea>
+                    <textarea class="TextHere" placeholder="Inserta texto a traducir aquí"></textarea>  
                 </div>
             </div>
-            <button class="translate" onClick={Codigito}>Translate</button>
+            <button class="translate">Translate</button>
         </div>
     </div>
-    <script src={Codigito} type="module"></script>
+    <script src="script" type="module"></script>
 </body>
    );
 }

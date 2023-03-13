@@ -1,3 +1,4 @@
+//lista de lenguajes
 const lenguages = {
     "am-ET": "Amharic",
     "ar-SA": "Arabic",
