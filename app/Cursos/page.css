@@ -1,7 +1,8 @@
 .Curso {
-    background-color: rgb(28, 142, 184);
+    background-color: rgb(205, 199, 107);
+    text-align: center;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(0, 121, 235);
+    border: 2px solid rgb(255, 255, 255);
     margin: 20px;
     padding: 20px;
   }

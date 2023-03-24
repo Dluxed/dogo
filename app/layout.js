@@ -1,4 +1,5 @@
 import Link from "next/link";
+import 'semantic-ui-css/semantic.min.css';
 
 //Links de la navbar
 const NavbarLay =[
@@ -25,19 +26,10 @@ const NavbarLay =[
   {
     label: 'Curso Frances',
     route: '/CursoFrances'
-  },
-
-  {
-    label: 'Login',
-    route: '/login/'
-  },
-
-  {
-    label: 'Logout',
-    route: '/logout/'
   }
 ]
 
+//Exportar navar para colocarlo en las paginas
 export default function RootLayout({children}) {
   return(
     <html>
@@ -45,18 +37,19 @@ export default function RootLayout({children}) {
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.main"></link>
         <title>Dogo Traductor</title>
       </head>
-      
-      <nav>
+
+      <body>
+      <nav> {/*Navbar*/}
           <ul>
             {NavbarLay.map(({ label, route }) => (
               <li>
                 <Link href={ route }> {label}</Link>
               </li>
             ))}
-            
+          
           </ul>
       </nav>
-      <body>{children}</body>
+        {children}</body>
     </html>
   )
 }
